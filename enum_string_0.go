@@ -18,10 +18,11 @@ const _AccelerationStructureBuildTypeKHR_name = "ACCELERATION_STRUCTURE_BUILD_TY
 var _AccelerationStructureBuildTypeKHR_index = [...]uint8{0, 42, 86, 138}
 
 func (i AccelerationStructureBuildTypeKHR) String() string {
-	if i < 0 || i >= AccelerationStructureBuildTypeKHR(len(_AccelerationStructureBuildTypeKHR_index)-1) {
+	idx := int(i) - 0
+	if i < 0 || idx >= len(_AccelerationStructureBuildTypeKHR_index)-1 {
 		return "AccelerationStructureBuildTypeKHR(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _AccelerationStructureBuildTypeKHR_name[_AccelerationStructureBuildTypeKHR_index[i]:_AccelerationStructureBuildTypeKHR_index[i+1]]
+	return _AccelerationStructureBuildTypeKHR_name[_AccelerationStructureBuildTypeKHR_index[idx]:_AccelerationStructureBuildTypeKHR_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.
@@ -36,10 +37,11 @@ const _AccelerationStructureCompatibilityKHR_name = "ACCELERATION_STRUCTURE_COMP
 var _AccelerationStructureCompatibilityKHR_index = [...]uint8{0, 51, 104}
 
 func (i AccelerationStructureCompatibilityKHR) String() string {
-	if i < 0 || i >= AccelerationStructureCompatibilityKHR(len(_AccelerationStructureCompatibilityKHR_index)-1) {
+	idx := int(i) - 0
+	if i < 0 || idx >= len(_AccelerationStructureCompatibilityKHR_index)-1 {
 		return "AccelerationStructureCompatibilityKHR(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _AccelerationStructureCompatibilityKHR_name[_AccelerationStructureCompatibilityKHR_index[i]:_AccelerationStructureCompatibilityKHR_index[i+1]]
+	return _AccelerationStructureCompatibilityKHR_name[_AccelerationStructureCompatibilityKHR_index[idx]:_AccelerationStructureCompatibilityKHR_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.
@@ -82,10 +84,11 @@ const _AccelerationStructureMemoryRequirementsTypeNV_name = "ACCELERATION_STRUCT
 var _AccelerationStructureMemoryRequirementsTypeNV_index = [...]uint8{0, 57, 121, 186}
 
 func (i AccelerationStructureMemoryRequirementsTypeNV) String() string {
-	if i < 0 || i >= AccelerationStructureMemoryRequirementsTypeNV(len(_AccelerationStructureMemoryRequirementsTypeNV_index)-1) {
+	idx := int(i) - 0
+	if i < 0 || idx >= len(_AccelerationStructureMemoryRequirementsTypeNV_index)-1 {
 		return "AccelerationStructureMemoryRequirementsTypeNV(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _AccelerationStructureMemoryRequirementsTypeNV_name[_AccelerationStructureMemoryRequirementsTypeNV_index[i]:_AccelerationStructureMemoryRequirementsTypeNV_index[i+1]]
+	return _AccelerationStructureMemoryRequirementsTypeNV_name[_AccelerationStructureMemoryRequirementsTypeNV_index[idx]:_AccelerationStructureMemoryRequirementsTypeNV_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.
@@ -101,10 +104,11 @@ const _AccelerationStructureMotionInstanceTypeNV_name = "ACCELERATION_STRUCTURE_
 var _AccelerationStructureMotionInstanceTypeNV_index = [...]uint8{0, 53, 113, 170}
 
 func (i AccelerationStructureMotionInstanceTypeNV) String() string {
-	if i < 0 || i >= AccelerationStructureMotionInstanceTypeNV(len(_AccelerationStructureMotionInstanceTypeNV_index)-1) {
+	idx := int(i) - 0
+	if i < 0 || idx >= len(_AccelerationStructureMotionInstanceTypeNV_index)-1 {
 		return "AccelerationStructureMotionInstanceTypeNV(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _AccelerationStructureMotionInstanceTypeNV_name[_AccelerationStructureMotionInstanceTypeNV_index[i]:_AccelerationStructureMotionInstanceTypeNV_index[i+1]]
+	return _AccelerationStructureMotionInstanceTypeNV_name[_AccelerationStructureMotionInstanceTypeNV_index[idx]:_AccelerationStructureMotionInstanceTypeNV_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.
@@ -122,10 +126,11 @@ const _AccelerationStructureTypeKHR_name = "ACCELERATION_STRUCTURE_TYPE_TOP_LEVE
 var _AccelerationStructureTypeKHR_index = [...]uint8{0, 41, 85, 124}
 
 func (i AccelerationStructureTypeKHR) String() string {
-	if i < 0 || i >= AccelerationStructureTypeKHR(len(_AccelerationStructureTypeKHR_index)-1) {
+	idx := int(i) - 0
+	if i < 0 || idx >= len(_AccelerationStructureTypeKHR_index)-1 {
 		return "AccelerationStructureTypeKHR(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _AccelerationStructureTypeKHR_name[_AccelerationStructureTypeKHR_index[i]:_AccelerationStructureTypeKHR_index[i+1]]
+	return _AccelerationStructureTypeKHR_name[_AccelerationStructureTypeKHR_index[idx]:_AccelerationStructureTypeKHR_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.
@@ -149,24 +154,24 @@ func _() {
 	_ = x[ACCESS_COLOR_ATTACHMENT_READ_BIT-128]
 	_ = x[ACCESS_COLOR_ATTACHMENT_WRITE_BIT-256]
 	_ = x[ACCESS_DEPTH_STENCIL_ATTACHMENT_READ_BIT-512]
+	_ = x[ACCESS_TRANSFORM_FEEDBACK_WRITE_BIT_EXT-1000028000]
 	_ = x[ACCESS_TRANSFORM_FEEDBACK_COUNTER_READ_BIT_EXT-1000028000]
 	_ = x[ACCESS_TRANSFORM_FEEDBACK_COUNTER_WRITE_BIT_EXT-1000028000]
-	_ = x[ACCESS_TRANSFORM_FEEDBACK_WRITE_BIT_EXT-1000028000]
 	_ = x[ACCESS_CONDITIONAL_RENDERING_READ_BIT_EXT-1000081000]
 	_ = x[ACCESS_COLOR_ATTACHMENT_READ_NONCOHERENT_BIT_EXT-1000148000]
-	_ = x[ACCESS_ACCELERATION_STRUCTURE_WRITE_BIT_KHR-1000150000]
 	_ = x[ACCESS_ACCELERATION_STRUCTURE_READ_BIT_KHR-1000150000]
+	_ = x[ACCESS_ACCELERATION_STRUCTURE_WRITE_BIT_KHR-1000150000]
 	_ = x[ACCESS_FRAGMENT_DENSITY_MAP_READ_BIT_EXT-1000218000]
 	_ = x[ACCESS_FRAGMENT_SHADING_RATE_ATTACHMENT_READ_BIT_KHR-1000226000]
-	_ = x[ACCESS_COMMAND_PREPROCESS_READ_BIT_NV-1000277000]
 	_ = x[ACCESS_COMMAND_PREPROCESS_WRITE_BIT_NV-1000277000]
+	_ = x[ACCESS_COMMAND_PREPROCESS_READ_BIT_NV-1000277000]
 	_ = x[ACCESS_ACCELERATION_STRUCTURE_READ_BIT_NV-1000150000]
 	_ = x[ACCESS_ACCELERATION_STRUCTURE_WRITE_BIT_NV-1000150000]
 	_ = x[ACCESS_SHADING_RATE_IMAGE_READ_BIT_NV-1000226000]
 	_ = x[ACCESS_NONE_KHR-0]
 }
 
-const _AccessFlagBits_name = "ACCESS_NONEACCESS_INDIRECT_COMMAND_READ_BITACCESS_INDEX_READ_BITACCESS_VERTEX_ATTRIBUTE_READ_BITACCESS_UNIFORM_READ_BITACCESS_INPUT_ATTACHMENT_READ_BITACCESS_SHADER_READ_BITACCESS_SHADER_WRITE_BITACCESS_COLOR_ATTACHMENT_READ_BITACCESS_COLOR_ATTACHMENT_WRITE_BITACCESS_DEPTH_STENCIL_ATTACHMENT_READ_BITACCESS_DEPTH_STENCIL_ATTACHMENT_WRITE_BITACCESS_TRANSFER_READ_BITACCESS_TRANSFER_WRITE_BITACCESS_HOST_READ_BITACCESS_HOST_WRITE_BITACCESS_MEMORY_READ_BITACCESS_MEMORY_WRITE_BITACCESS_TRANSFORM_FEEDBACK_COUNTER_READ_BIT_EXTACCESS_CONDITIONAL_RENDERING_READ_BIT_EXTACCESS_COLOR_ATTACHMENT_READ_NONCOHERENT_BIT_EXTACCESS_ACCELERATION_STRUCTURE_WRITE_BIT_KHRACCESS_FRAGMENT_DENSITY_MAP_READ_BIT_EXTACCESS_FRAGMENT_SHADING_RATE_ATTACHMENT_READ_BIT_KHRACCESS_COMMAND_PREPROCESS_READ_BIT_NV"
+const _AccessFlagBits_name = "ACCESS_NONEACCESS_INDIRECT_COMMAND_READ_BITACCESS_INDEX_READ_BITACCESS_VERTEX_ATTRIBUTE_READ_BITACCESS_UNIFORM_READ_BITACCESS_INPUT_ATTACHMENT_READ_BITACCESS_SHADER_READ_BITACCESS_SHADER_WRITE_BITACCESS_COLOR_ATTACHMENT_READ_BITACCESS_COLOR_ATTACHMENT_WRITE_BITACCESS_DEPTH_STENCIL_ATTACHMENT_READ_BITACCESS_DEPTH_STENCIL_ATTACHMENT_WRITE_BITACCESS_TRANSFER_READ_BITACCESS_TRANSFER_WRITE_BITACCESS_HOST_READ_BITACCESS_HOST_WRITE_BITACCESS_MEMORY_READ_BITACCESS_MEMORY_WRITE_BITACCESS_TRANSFORM_FEEDBACK_WRITE_BIT_EXTACCESS_CONDITIONAL_RENDERING_READ_BIT_EXTACCESS_COLOR_ATTACHMENT_READ_NONCOHERENT_BIT_EXTACCESS_ACCELERATION_STRUCTURE_READ_BIT_KHRACCESS_FRAGMENT_DENSITY_MAP_READ_BIT_EXTACCESS_FRAGMENT_SHADING_RATE_ATTACHMENT_READ_BIT_KHRACCESS_COMMAND_PREPROCESS_WRITE_BIT_NV"
 
 var _AccessFlagBits_map = map[AccessFlagBits]string{
 	0:          _AccessFlagBits_name[0:11],
@@ -187,13 +192,13 @@ var _AccessFlagBits_map = map[AccessFlagBits]string{
 	16384:      _AccessFlagBits_name[411:432],
 	32768:      _AccessFlagBits_name[432:454],
 	65536:      _AccessFlagBits_name[454:477],
-	1000028000: _AccessFlagBits_name[477:523],
-	1000081000: _AccessFlagBits_name[523:564],
-	1000148000: _AccessFlagBits_name[564:612],
-	1000150000: _AccessFlagBits_name[612:655],
-	1000218000: _AccessFlagBits_name[655:695],
-	1000226000: _AccessFlagBits_name[695:747],
-	1000277000: _AccessFlagBits_name[747:784],
+	1000028000: _AccessFlagBits_name[477:516],
+	1000081000: _AccessFlagBits_name[516:557],
+	1000148000: _AccessFlagBits_name[557:605],
+	1000150000: _AccessFlagBits_name[605:647],
+	1000218000: _AccessFlagBits_name[647:687],
+	1000226000: _AccessFlagBits_name[687:739],
+	1000277000: _AccessFlagBits_name[739:777],
 }
 
 func (i AccessFlagBits) String() string {
@@ -229,24 +234,26 @@ func _() {
 	_ = x[ACCESS_2_DEPTH_STENCIL_ATTACHMENT_READ_BIT-512]
 	_ = x[ACCESS_2_VIDEO_DECODE_READ_BIT_KHR-1000024000]
 	_ = x[ACCESS_2_VIDEO_DECODE_WRITE_BIT_KHR-1000024000]
-	_ = x[ACCESS_2_COLOR_ATTACHMENT_READ_NONCOHERENT_BIT_EXT-1000314000]
-	_ = x[ACCESS_2_ACCELERATION_STRUCTURE_READ_BIT_KHR-1000314000]
-	_ = x[ACCESS_2_FRAGMENT_DENSITY_MAP_READ_BIT_EXT-1000314000]
-	_ = x[ACCESS_2_CONDITIONAL_RENDERING_READ_BIT_EXT-1000314000]
-	_ = x[ACCESS_2_FRAGMENT_SHADING_RATE_ATTACHMENT_READ_BIT_KHR-1000314000]
-	_ = x[ACCESS_2_COMMAND_PREPROCESS_READ_BIT_NV-1000314000]
-	_ = x[ACCESS_2_TRANSFORM_FEEDBACK_COUNTER_READ_BIT_EXT-1000314000]
-	_ = x[ACCESS_2_TRANSFORM_FEEDBACK_WRITE_BIT_EXT-1000314000]
+	_ = x[ACCESS_2_VIDEO_ENCODE_READ_BIT_KHR-1000299000]
+	_ = x[ACCESS_2_VIDEO_ENCODE_WRITE_BIT_KHR-1000299000]
 	_ = x[ACCESS_2_TRANSFORM_FEEDBACK_COUNTER_WRITE_BIT_EXT-1000314000]
-	_ = x[ACCESS_2_ACCELERATION_STRUCTURE_WRITE_BIT_KHR-1000314000]
+	_ = x[ACCESS_2_FRAGMENT_SHADING_RATE_ATTACHMENT_READ_BIT_KHR-1000314000]
+	_ = x[ACCESS_2_COLOR_ATTACHMENT_READ_NONCOHERENT_BIT_EXT-1000314000]
+	_ = x[ACCESS_2_TRANSFORM_FEEDBACK_WRITE_BIT_EXT-1000314000]
+	_ = x[ACCESS_2_COMMAND_PREPROCESS_READ_BIT_NV-1000314000]
 	_ = x[ACCESS_2_COMMAND_PREPROCESS_WRITE_BIT_NV-1000314000]
+	_ = x[ACCESS_2_ACCELERATION_STRUCTURE_WRITE_BIT_KHR-1000314000]
+	_ = x[ACCESS_2_CONDITIONAL_RENDERING_READ_BIT_EXT-1000314000]
+	_ = x[ACCESS_2_FRAGMENT_DENSITY_MAP_READ_BIT_EXT-1000314000]
+	_ = x[ACCESS_2_TRANSFORM_FEEDBACK_COUNTER_READ_BIT_EXT-1000314000]
+	_ = x[ACCESS_2_ACCELERATION_STRUCTURE_READ_BIT_KHR-1000314000]
 	_ = x[ACCESS_2_DESCRIPTOR_BUFFER_READ_BIT_EXT-1000316000]
 	_ = x[ACCESS_2_INVOCATION_MASK_READ_BIT_HUAWEI-1000370000]
 	_ = x[ACCESS_2_SHADER_BINDING_TABLE_READ_BIT_KHR-1000386000]
-	_ = x[ACCESS_2_MICROMAP_WRITE_BIT_EXT-1000396000]
 	_ = x[ACCESS_2_MICROMAP_READ_BIT_EXT-1000396000]
-	_ = x[ACCESS_2_OPTICAL_FLOW_READ_BIT_NV-1000464000]
+	_ = x[ACCESS_2_MICROMAP_WRITE_BIT_EXT-1000396000]
 	_ = x[ACCESS_2_OPTICAL_FLOW_WRITE_BIT_NV-1000464000]
+	_ = x[ACCESS_2_OPTICAL_FLOW_READ_BIT_NV-1000464000]
 	_ = x[ACCESS_2_ACCELERATION_STRUCTURE_READ_BIT_NV-1000314000]
 	_ = x[ACCESS_2_ACCELERATION_STRUCTURE_WRITE_BIT_NV-1000314000]
 	_ = x[ACCESS_2_COLOR_ATTACHMENT_READ_BIT_KHR-128]
@@ -273,7 +280,7 @@ func _() {
 	_ = x[ACCESS_2_VERTEX_ATTRIBUTE_READ_BIT_KHR-4]
 }
 
-const _AccessFlagBits2_name = "ACCESS_2_NONEACCESS_2_INDIRECT_COMMAND_READ_BITACCESS_2_INDEX_READ_BITACCESS_2_VERTEX_ATTRIBUTE_READ_BITACCESS_2_UNIFORM_READ_BITACCESS_2_INPUT_ATTACHMENT_READ_BITACCESS_2_SHADER_READ_BITACCESS_2_SHADER_WRITE_BITACCESS_2_COLOR_ATTACHMENT_READ_BITACCESS_2_COLOR_ATTACHMENT_WRITE_BITACCESS_2_DEPTH_STENCIL_ATTACHMENT_READ_BITACCESS_2_DEPTH_STENCIL_ATTACHMENT_WRITE_BITACCESS_2_TRANSFER_READ_BITACCESS_2_TRANSFER_WRITE_BITACCESS_2_HOST_READ_BITACCESS_2_HOST_WRITE_BITACCESS_2_MEMORY_READ_BITACCESS_2_MEMORY_WRITE_BITACCESS_2_VIDEO_DECODE_READ_BIT_KHRACCESS_2_COLOR_ATTACHMENT_READ_NONCOHERENT_BIT_EXTACCESS_2_DESCRIPTOR_BUFFER_READ_BIT_EXTACCESS_2_INVOCATION_MASK_READ_BIT_HUAWEIACCESS_2_SHADER_BINDING_TABLE_READ_BIT_KHRACCESS_2_MICROMAP_WRITE_BIT_EXTACCESS_2_OPTICAL_FLOW_READ_BIT_NVACCESS_2_SHADER_SAMPLED_READ_BITACCESS_2_SHADER_STORAGE_READ_BITACCESS_2_SHADER_STORAGE_WRITE_BIT"
+const _AccessFlagBits2_name = "ACCESS_2_NONEACCESS_2_INDIRECT_COMMAND_READ_BITACCESS_2_INDEX_READ_BITACCESS_2_VERTEX_ATTRIBUTE_READ_BITACCESS_2_UNIFORM_READ_BITACCESS_2_INPUT_ATTACHMENT_READ_BITACCESS_2_SHADER_READ_BITACCESS_2_SHADER_WRITE_BITACCESS_2_COLOR_ATTACHMENT_READ_BITACCESS_2_COLOR_ATTACHMENT_WRITE_BITACCESS_2_DEPTH_STENCIL_ATTACHMENT_READ_BITACCESS_2_DEPTH_STENCIL_ATTACHMENT_WRITE_BITACCESS_2_TRANSFER_READ_BITACCESS_2_TRANSFER_WRITE_BITACCESS_2_HOST_READ_BITACCESS_2_HOST_WRITE_BITACCESS_2_MEMORY_READ_BITACCESS_2_MEMORY_WRITE_BITACCESS_2_VIDEO_DECODE_READ_BIT_KHRACCESS_2_VIDEO_ENCODE_READ_BIT_KHRACCESS_2_TRANSFORM_FEEDBACK_COUNTER_WRITE_BIT_EXTACCESS_2_DESCRIPTOR_BUFFER_READ_BIT_EXTACCESS_2_INVOCATION_MASK_READ_BIT_HUAWEIACCESS_2_SHADER_BINDING_TABLE_READ_BIT_KHRACCESS_2_MICROMAP_READ_BIT_EXTACCESS_2_OPTICAL_FLOW_WRITE_BIT_NVACCESS_2_SHADER_SAMPLED_READ_BITACCESS_2_SHADER_STORAGE_READ_BITACCESS_2_SHADER_STORAGE_WRITE_BIT"
 
 var _AccessFlagBits2_map = map[AccessFlagBits2]string{
 	0:           _AccessFlagBits2_name[0:13],
@@ -295,15 +302,16 @@ var _AccessFlagBits2_map = map[AccessFlagBits2]string{
 	32768:       _AccessFlagBits2_name[464:488],
 	65536:       _AccessFlagBits2_name[488:513],
 	1000024000:  _AccessFlagBits2_name[513:547],
-	1000314000:  _AccessFlagBits2_name[547:597],
-	1000316000:  _AccessFlagBits2_name[597:636],
-	1000370000:  _AccessFlagBits2_name[636:676],
-	1000386000:  _AccessFlagBits2_name[676:718],
-	1000396000:  _AccessFlagBits2_name[718:749],
-	1000464000:  _AccessFlagBits2_name[749:782],
-	4294967296:  _AccessFlagBits2_name[782:814],
-	8589934592:  _AccessFlagBits2_name[814:846],
-	17179869184: _AccessFlagBits2_name[846:879],
+	1000299000:  _AccessFlagBits2_name[547:581],
+	1000314000:  _AccessFlagBits2_name[581:630],
+	1000316000:  _AccessFlagBits2_name[630:669],
+	1000370000:  _AccessFlagBits2_name[669:709],
+	1000386000:  _AccessFlagBits2_name[709:751],
+	1000396000:  _AccessFlagBits2_name[751:781],
+	1000464000:  _AccessFlagBits2_name[781:815],
+	4294967296:  _AccessFlagBits2_name[815:847],
+	8589934592:  _AccessFlagBits2_name[847:879],
+	17179869184: _AccessFlagBits2_name[879:912],
 }
 
 func (i AccessFlagBits2) String() string {
@@ -324,11 +332,11 @@ const _AttachmentDescriptionFlagBits_name = "ATTACHMENT_DESCRIPTION_MAY_ALIAS_BI
 var _AttachmentDescriptionFlagBits_index = [...]uint8{0, 36}
 
 func (i AttachmentDescriptionFlagBits) String() string {
-	i -= 1
-	if i >= AttachmentDescriptionFlagBits(len(_AttachmentDescriptionFlagBits_index)-1) {
-		return "AttachmentDescriptionFlagBits(" + strconv.FormatInt(int64(i+1), 10) + ")"
+	idx := int(i) - 1
+	if i < 1 || idx >= len(_AttachmentDescriptionFlagBits_index)-1 {
+		return "AttachmentDescriptionFlagBits(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _AttachmentDescriptionFlagBits_name[_AttachmentDescriptionFlagBits_index[i]:_AttachmentDescriptionFlagBits_index[i+1]]
+	return _AttachmentDescriptionFlagBits_name[_AttachmentDescriptionFlagBits_index[idx]:_AttachmentDescriptionFlagBits_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.
@@ -337,12 +345,13 @@ func _() {
 	_ = x[ATTACHMENT_LOAD_OP_LOAD-0]
 	_ = x[ATTACHMENT_LOAD_OP_CLEAR-1]
 	_ = x[ATTACHMENT_LOAD_OP_DONT_CARE-2]
-	_ = x[ATTACHMENT_LOAD_OP_NONE_EXT-1000400000]
+	_ = x[ATTACHMENT_LOAD_OP_NONE_KHR-1000526000]
+	_ = x[ATTACHMENT_LOAD_OP_NONE_EXT-1000526000]
 }
 
 const (
 	_AttachmentLoadOp_name_0 = "ATTACHMENT_LOAD_OP_LOADATTACHMENT_LOAD_OP_CLEARATTACHMENT_LOAD_OP_DONT_CARE"
-	_AttachmentLoadOp_name_1 = "ATTACHMENT_LOAD_OP_NONE_EXT"
+	_AttachmentLoadOp_name_1 = "ATTACHMENT_LOAD_OP_NONE_KHR"
 )
 
 var (
@@ -353,7 +362,7 @@ func (i AttachmentLoadOp) String() string {
 	switch {
 	case 0 <= i && i <= 2:
 		return _AttachmentLoadOp_name_0[_AttachmentLoadOp_index_0[i]:_AttachmentLoadOp_index_0[i+1]]
-	case i == 1000400000:
+	case i == 1000526000:
 		return _AttachmentLoadOp_name_1
 	default:
 		return "AttachmentLoadOp(" + strconv.FormatInt(int64(i), 10) + ")"
@@ -366,9 +375,9 @@ func _() {
 	_ = x[ATTACHMENT_STORE_OP_STORE-0]
 	_ = x[ATTACHMENT_STORE_OP_DONT_CARE-1]
 	_ = x[ATTACHMENT_STORE_OP_NONE-1000301000]
-	_ = x[ATTACHMENT_STORE_OP_NONE_QCOM-1000301000]
 	_ = x[ATTACHMENT_STORE_OP_NONE_EXT-1000301000]
 	_ = x[ATTACHMENT_STORE_OP_NONE_KHR-1000301000]
+	_ = x[ATTACHMENT_STORE_OP_NONE_QCOM-1000301000]
 }
 
 const (
@@ -420,10 +429,11 @@ const _BlendFactor_name = "BLEND_FACTOR_ZEROBLEND_FACTOR_ONEBLEND_FACTOR_SRC_COL
 var _BlendFactor_index = [...]uint16{0, 17, 33, 55, 87, 109, 141, 163, 195, 217, 249, 276, 313, 340, 377, 408, 431, 464, 487, 520}
 
 func (i BlendFactor) String() string {
-	if i < 0 || i >= BlendFactor(len(_BlendFactor_index)-1) {
+	idx := int(i) - 0
+	if i < 0 || idx >= len(_BlendFactor_index)-1 {
 		return "BlendFactor(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _BlendFactor_name[_BlendFactor_index[i]:_BlendFactor_index[i+1]]
+	return _BlendFactor_name[_BlendFactor_index[idx]:_BlendFactor_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.
@@ -517,10 +527,11 @@ const _BlendOverlapEXT_name = "BLEND_OVERLAP_UNCORRELATED_EXTBLEND_OVERLAP_DISJO
 var _BlendOverlapEXT_index = [...]uint8{0, 30, 56, 82}
 
 func (i BlendOverlapEXT) String() string {
-	if i < 0 || i >= BlendOverlapEXT(len(_BlendOverlapEXT_index)-1) {
+	idx := int(i) - 0
+	if i < 0 || idx >= len(_BlendOverlapEXT_index)-1 {
 		return "BlendOverlapEXT(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _BlendOverlapEXT_name[_BlendOverlapEXT_index[i]:_BlendOverlapEXT_index[i+1]]
+	return _BlendOverlapEXT_name[_BlendOverlapEXT_index[idx]:_BlendOverlapEXT_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.
@@ -535,10 +546,11 @@ const _BlockMatchWindowCompareModeQCOM_name = "BLOCK_MATCH_WINDOW_COMPARE_MODE_M
 var _BlockMatchWindowCompareModeQCOM_index = [...]uint8{0, 40, 80}
 
 func (i BlockMatchWindowCompareModeQCOM) String() string {
-	if i < 0 || i >= BlockMatchWindowCompareModeQCOM(len(_BlockMatchWindowCompareModeQCOM_index)-1) {
+	idx := int(i) - 0
+	if i < 0 || idx >= len(_BlockMatchWindowCompareModeQCOM_index)-1 {
 		return "BlockMatchWindowCompareModeQCOM(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _BlockMatchWindowCompareModeQCOM_name[_BlockMatchWindowCompareModeQCOM_index[i]:_BlockMatchWindowCompareModeQCOM_index[i+1]]
+	return _BlockMatchWindowCompareModeQCOM_name[_BlockMatchWindowCompareModeQCOM_index[idx]:_BlockMatchWindowCompareModeQCOM_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.
@@ -585,6 +597,7 @@ func _() {
 	_ = x[BUFFER_CREATE_PROTECTED_BIT-8]
 	_ = x[BUFFER_CREATE_DEVICE_ADDRESS_CAPTURE_REPLAY_BIT-16]
 	_ = x[BUFFER_CREATE_DESCRIPTOR_BUFFER_CAPTURE_REPLAY_BIT_EXT-1000316000]
+	_ = x[BUFFER_CREATE_VIDEO_PROFILE_INDEPENDENT_BIT_KHR-1000515000]
 	_ = x[BUFFER_CREATE_DEVICE_ADDRESS_CAPTURE_REPLAY_BIT_KHR-16]
 	_ = x[BUFFER_CREATE_DEVICE_ADDRESS_CAPTURE_REPLAY_BIT_EXT-16]
 }
@@ -595,6 +608,7 @@ const (
 	_BufferCreateFlagBits_name_2 = "BUFFER_CREATE_PROTECTED_BIT"
 	_BufferCreateFlagBits_name_3 = "BUFFER_CREATE_DEVICE_ADDRESS_CAPTURE_REPLAY_BIT"
 	_BufferCreateFlagBits_name_4 = "BUFFER_CREATE_DESCRIPTOR_BUFFER_CAPTURE_REPLAY_BIT_EXT"
+	_BufferCreateFlagBits_name_5 = "BUFFER_CREATE_VIDEO_PROFILE_INDEPENDENT_BIT_KHR"
 )
 
 var (
@@ -614,6 +628,8 @@ func (i BufferCreateFlagBits) String() string {
 		return _BufferCreateFlagBits_name_3
 	case i == 1000316000:
 		return _BufferCreateFlagBits_name_4
+	case i == 1000515000:
+		return _BufferCreateFlagBits_name_5
 	default:
 		return "BufferCreateFlagBits(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
@@ -634,14 +650,16 @@ func _() {
 	_ = x[BUFFER_USAGE_INDIRECT_BUFFER_BIT-256]
 	_ = x[BUFFER_USAGE_VIDEO_DECODE_SRC_BIT_KHR-1000024000]
 	_ = x[BUFFER_USAGE_VIDEO_DECODE_DST_BIT_KHR-1000024000]
-	_ = x[BUFFER_USAGE_TRANSFORM_FEEDBACK_BUFFER_BIT_EXT-1000028000]
 	_ = x[BUFFER_USAGE_TRANSFORM_FEEDBACK_COUNTER_BUFFER_BIT_EXT-1000028000]
+	_ = x[BUFFER_USAGE_TRANSFORM_FEEDBACK_BUFFER_BIT_EXT-1000028000]
 	_ = x[BUFFER_USAGE_CONDITIONAL_RENDERING_BIT_EXT-1000081000]
 	_ = x[BUFFER_USAGE_ACCELERATION_STRUCTURE_BUILD_INPUT_READ_ONLY_BIT_KHR-1000150000]
 	_ = x[BUFFER_USAGE_ACCELERATION_STRUCTURE_STORAGE_BIT_KHR-1000150000]
-	_ = x[BUFFER_USAGE_PUSH_DESCRIPTORS_DESCRIPTOR_BUFFER_BIT_EXT-1000316000]
-	_ = x[BUFFER_USAGE_RESOURCE_DESCRIPTOR_BUFFER_BIT_EXT-1000316000]
+	_ = x[BUFFER_USAGE_VIDEO_ENCODE_DST_BIT_KHR-1000299000]
+	_ = x[BUFFER_USAGE_VIDEO_ENCODE_SRC_BIT_KHR-1000299000]
 	_ = x[BUFFER_USAGE_SAMPLER_DESCRIPTOR_BUFFER_BIT_EXT-1000316000]
+	_ = x[BUFFER_USAGE_RESOURCE_DESCRIPTOR_BUFFER_BIT_EXT-1000316000]
+	_ = x[BUFFER_USAGE_PUSH_DESCRIPTORS_DESCRIPTOR_BUFFER_BIT_EXT-1000316000]
 	_ = x[BUFFER_USAGE_SHADER_BINDING_TABLE_BIT_KHR-1000347000]
 	_ = x[BUFFER_USAGE_MICROMAP_BUILD_INPUT_READ_ONLY_BIT_EXT-1000396000]
 	_ = x[BUFFER_USAGE_MICROMAP_STORAGE_BIT_EXT-1000396000]
@@ -650,7 +668,7 @@ func _() {
 	_ = x[BUFFER_USAGE_SHADER_DEVICE_ADDRESS_BIT_KHR-131072]
 }
 
-const _BufferUsageFlagBits_name = "BUFFER_USAGE_TRANSFER_SRC_BITBUFFER_USAGE_TRANSFER_DST_BITBUFFER_USAGE_UNIFORM_TEXEL_BUFFER_BITBUFFER_USAGE_STORAGE_TEXEL_BUFFER_BITBUFFER_USAGE_UNIFORM_BUFFER_BITBUFFER_USAGE_STORAGE_BUFFER_BITBUFFER_USAGE_INDEX_BUFFER_BITBUFFER_USAGE_VERTEX_BUFFER_BITBUFFER_USAGE_INDIRECT_BUFFER_BITBUFFER_USAGE_SHADER_DEVICE_ADDRESS_BITBUFFER_USAGE_VIDEO_DECODE_SRC_BIT_KHRBUFFER_USAGE_TRANSFORM_FEEDBACK_BUFFER_BIT_EXTBUFFER_USAGE_CONDITIONAL_RENDERING_BIT_EXTBUFFER_USAGE_ACCELERATION_STRUCTURE_BUILD_INPUT_READ_ONLY_BIT_KHRBUFFER_USAGE_PUSH_DESCRIPTORS_DESCRIPTOR_BUFFER_BIT_EXTBUFFER_USAGE_SHADER_BINDING_TABLE_BIT_KHRBUFFER_USAGE_MICROMAP_BUILD_INPUT_READ_ONLY_BIT_EXT"
+const _BufferUsageFlagBits_name = "BUFFER_USAGE_TRANSFER_SRC_BITBUFFER_USAGE_TRANSFER_DST_BITBUFFER_USAGE_UNIFORM_TEXEL_BUFFER_BITBUFFER_USAGE_STORAGE_TEXEL_BUFFER_BITBUFFER_USAGE_UNIFORM_BUFFER_BITBUFFER_USAGE_STORAGE_BUFFER_BITBUFFER_USAGE_INDEX_BUFFER_BITBUFFER_USAGE_VERTEX_BUFFER_BITBUFFER_USAGE_INDIRECT_BUFFER_BITBUFFER_USAGE_SHADER_DEVICE_ADDRESS_BITBUFFER_USAGE_VIDEO_DECODE_SRC_BIT_KHRBUFFER_USAGE_TRANSFORM_FEEDBACK_COUNTER_BUFFER_BIT_EXTBUFFER_USAGE_CONDITIONAL_RENDERING_BIT_EXTBUFFER_USAGE_ACCELERATION_STRUCTURE_BUILD_INPUT_READ_ONLY_BIT_KHRBUFFER_USAGE_VIDEO_ENCODE_DST_BIT_KHRBUFFER_USAGE_SAMPLER_DESCRIPTOR_BUFFER_BIT_EXTBUFFER_USAGE_SHADER_BINDING_TABLE_BIT_KHRBUFFER_USAGE_MICROMAP_BUILD_INPUT_READ_ONLY_BIT_EXT"
 
 var _BufferUsageFlagBits_map = map[BufferUsageFlagBits]string{
 	1:          _BufferUsageFlagBits_name[0:29],
@@ -664,12 +682,13 @@ var _BufferUsageFlagBits_map = map[BufferUsageFlagBits]string{
 	256:        _BufferUsageFlagBits_name[253:285],
 	131072:     _BufferUsageFlagBits_name[285:323],
 	1000024000: _BufferUsageFlagBits_name[323:360],
-	1000028000: _BufferUsageFlagBits_name[360:406],
-	1000081000: _BufferUsageFlagBits_name[406:448],
-	1000150000: _BufferUsageFlagBits_name[448:513],
-	1000316000: _BufferUsageFlagBits_name[513:568],
-	1000347000: _BufferUsageFlagBits_name[568:609],
-	1000396000: _BufferUsageFlagBits_name[609:660],
+	1000028000: _BufferUsageFlagBits_name[360:414],
+	1000081000: _BufferUsageFlagBits_name[414:456],
+	1000150000: _BufferUsageFlagBits_name[456:521],
+	1000299000: _BufferUsageFlagBits_name[521:558],
+	1000316000: _BufferUsageFlagBits_name[558:604],
+	1000347000: _BufferUsageFlagBits_name[604:645],
+	1000396000: _BufferUsageFlagBits_name[645:696],
 }
 
 func (i BufferUsageFlagBits) String() string {
@@ -691,22 +710,22 @@ func _() {
 	_ = x[BUFFER_USAGE_2_INDEX_BUFFER_BIT_KHR-64]
 	_ = x[BUFFER_USAGE_2_VERTEX_BUFFER_BIT_KHR-128]
 	_ = x[BUFFER_USAGE_2_INDIRECT_BUFFER_BIT_KHR-256]
-	_ = x[BUFFER_USAGE_2_VIDEO_DECODE_DST_BIT_KHR-1000470000]
-	_ = x[BUFFER_USAGE_2_RESOURCE_DESCRIPTOR_BUFFER_BIT_EXT-1000470000]
-	_ = x[BUFFER_USAGE_2_VIDEO_DECODE_SRC_BIT_KHR-1000470000]
-	_ = x[BUFFER_USAGE_2_PUSH_DESCRIPTORS_DESCRIPTOR_BUFFER_BIT_EXT-1000470000]
-	_ = x[BUFFER_USAGE_2_TRANSFORM_FEEDBACK_COUNTER_BUFFER_BIT_EXT-1000470000]
-	_ = x[BUFFER_USAGE_2_MICROMAP_STORAGE_BIT_EXT-1000470000]
-	_ = x[BUFFER_USAGE_2_VIDEO_ENCODE_SRC_BIT_KHR-1000470000]
-	_ = x[BUFFER_USAGE_2_ACCELERATION_STRUCTURE_BUILD_INPUT_READ_ONLY_BIT_KHR-1000470000]
-	_ = x[BUFFER_USAGE_2_SAMPLER_DESCRIPTOR_BUFFER_BIT_EXT-1000470000]
-	_ = x[BUFFER_USAGE_2_ACCELERATION_STRUCTURE_STORAGE_BIT_KHR-1000470000]
-	_ = x[BUFFER_USAGE_2_VIDEO_ENCODE_DST_BIT_KHR-1000470000]
-	_ = x[BUFFER_USAGE_2_TRANSFORM_FEEDBACK_BUFFER_BIT_EXT-1000470000]
-	_ = x[BUFFER_USAGE_2_SHADER_BINDING_TABLE_BIT_KHR-1000470000]
-	_ = x[BUFFER_USAGE_2_SHADER_DEVICE_ADDRESS_BIT_KHR-1000470000]
-	_ = x[BUFFER_USAGE_2_CONDITIONAL_RENDERING_BIT_EXT-1000470000]
 	_ = x[BUFFER_USAGE_2_MICROMAP_BUILD_INPUT_READ_ONLY_BIT_EXT-1000470000]
+	_ = x[BUFFER_USAGE_2_SAMPLER_DESCRIPTOR_BUFFER_BIT_EXT-1000470000]
+	_ = x[BUFFER_USAGE_2_VIDEO_DECODE_DST_BIT_KHR-1000470000]
+	_ = x[BUFFER_USAGE_2_MICROMAP_STORAGE_BIT_EXT-1000470000]
+	_ = x[BUFFER_USAGE_2_TRANSFORM_FEEDBACK_BUFFER_BIT_EXT-1000470000]
+	_ = x[BUFFER_USAGE_2_VIDEO_ENCODE_DST_BIT_KHR-1000470000]
+	_ = x[BUFFER_USAGE_2_ACCELERATION_STRUCTURE_BUILD_INPUT_READ_ONLY_BIT_KHR-1000470000]
+	_ = x[BUFFER_USAGE_2_TRANSFORM_FEEDBACK_COUNTER_BUFFER_BIT_EXT-1000470000]
+	_ = x[BUFFER_USAGE_2_VIDEO_DECODE_SRC_BIT_KHR-1000470000]
+	_ = x[BUFFER_USAGE_2_RESOURCE_DESCRIPTOR_BUFFER_BIT_EXT-1000470000]
+	_ = x[BUFFER_USAGE_2_PUSH_DESCRIPTORS_DESCRIPTOR_BUFFER_BIT_EXT-1000470000]
+	_ = x[BUFFER_USAGE_2_ACCELERATION_STRUCTURE_STORAGE_BIT_KHR-1000470000]
+	_ = x[BUFFER_USAGE_2_CONDITIONAL_RENDERING_BIT_EXT-1000470000]
+	_ = x[BUFFER_USAGE_2_SHADER_DEVICE_ADDRESS_BIT_KHR-1000470000]
+	_ = x[BUFFER_USAGE_2_SHADER_BINDING_TABLE_BIT_KHR-1000470000]
+	_ = x[BUFFER_USAGE_2_VIDEO_ENCODE_SRC_BIT_KHR-1000470000]
 	_ = x[BUFFER_USAGE_2_RAY_TRACING_BIT_NV-1000470000]
 }
 
@@ -719,7 +738,7 @@ const (
 	_BufferUsageFlagBits2KHR_name_5 = "BUFFER_USAGE_2_INDEX_BUFFER_BIT_KHR"
 	_BufferUsageFlagBits2KHR_name_6 = "BUFFER_USAGE_2_VERTEX_BUFFER_BIT_KHR"
 	_BufferUsageFlagBits2KHR_name_7 = "BUFFER_USAGE_2_INDIRECT_BUFFER_BIT_KHR"
-	_BufferUsageFlagBits2KHR_name_8 = "BUFFER_USAGE_2_VIDEO_DECODE_DST_BIT_KHR"
+	_BufferUsageFlagBits2KHR_name_8 = "BUFFER_USAGE_2_MICROMAP_BUILD_INPUT_READ_ONLY_BIT_EXT"
 )
 
 var (
@@ -820,10 +839,11 @@ const _BuildAccelerationStructureModeKHR_name = "BUILD_ACCELERATION_STRUCTURE_MO
 var _BuildAccelerationStructureModeKHR_index = [...]uint8{0, 43, 87}
 
 func (i BuildAccelerationStructureModeKHR) String() string {
-	if i < 0 || i >= BuildAccelerationStructureModeKHR(len(_BuildAccelerationStructureModeKHR_index)-1) {
+	idx := int(i) - 0
+	if i < 0 || idx >= len(_BuildAccelerationStructureModeKHR_index)-1 {
 		return "BuildAccelerationStructureModeKHR(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _BuildAccelerationStructureModeKHR_name[_BuildAccelerationStructureModeKHR_index[i]:_BuildAccelerationStructureModeKHR_index[i+1]]
+	return _BuildAccelerationStructureModeKHR_name[_BuildAccelerationStructureModeKHR_index[idx]:_BuildAccelerationStructureModeKHR_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.
@@ -866,10 +886,11 @@ const _BuildMicromapModeEXT_name = "BUILD_MICROMAP_MODE_BUILD_EXT"
 var _BuildMicromapModeEXT_index = [...]uint8{0, 29}
 
 func (i BuildMicromapModeEXT) String() string {
-	if i < 0 || i >= BuildMicromapModeEXT(len(_BuildMicromapModeEXT_index)-1) {
+	idx := int(i) - 0
+	if i < 0 || idx >= len(_BuildMicromapModeEXT_index)-1 {
 		return "BuildMicromapModeEXT(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _BuildMicromapModeEXT_name[_BuildMicromapModeEXT_index[i]:_BuildMicromapModeEXT_index[i+1]]
+	return _BuildMicromapModeEXT_name[_BuildMicromapModeEXT_index[idx]:_BuildMicromapModeEXT_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.
@@ -886,10 +907,11 @@ const _ChromaLocation_name = "CHROMA_LOCATION_COSITED_EVENCHROMA_LOCATION_MIDPOI
 var _ChromaLocation_index = [...]uint8{0, 28, 52}
 
 func (i ChromaLocation) String() string {
-	if i < 0 || i >= ChromaLocation(len(_ChromaLocation_index)-1) {
+	idx := int(i) - 0
+	if i < 0 || idx >= len(_ChromaLocation_index)-1 {
 		return "ChromaLocation(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _ChromaLocation_name[_ChromaLocation_index[i]:_ChromaLocation_index[i+1]]
+	return _ChromaLocation_name[_ChromaLocation_index[idx]:_ChromaLocation_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.
@@ -906,10 +928,11 @@ const _CoarseSampleOrderTypeNV_name = "COARSE_SAMPLE_ORDER_TYPE_DEFAULT_NVCOARSE
 var _CoarseSampleOrderTypeNV_index = [...]uint8{0, 35, 69, 108, 148}
 
 func (i CoarseSampleOrderTypeNV) String() string {
-	if i < 0 || i >= CoarseSampleOrderTypeNV(len(_CoarseSampleOrderTypeNV_index)-1) {
+	idx := int(i) - 0
+	if i < 0 || idx >= len(_CoarseSampleOrderTypeNV_index)-1 {
 		return "CoarseSampleOrderTypeNV(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _CoarseSampleOrderTypeNV_name[_CoarseSampleOrderTypeNV_index[i]:_CoarseSampleOrderTypeNV_index[i+1]]
+	return _CoarseSampleOrderTypeNV_name[_CoarseSampleOrderTypeNV_index[idx]:_CoarseSampleOrderTypeNV_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.
@@ -1004,10 +1027,11 @@ const _CommandBufferLevel_name = "COMMAND_BUFFER_LEVEL_PRIMARYCOMMAND_BUFFER_LEV
 var _CommandBufferLevel_index = [...]uint8{0, 28, 58}
 
 func (i CommandBufferLevel) String() string {
-	if i < 0 || i >= CommandBufferLevel(len(_CommandBufferLevel_index)-1) {
+	idx := int(i) - 0
+	if i < 0 || idx >= len(_CommandBufferLevel_index)-1 {
 		return "CommandBufferLevel(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _CommandBufferLevel_name[_CommandBufferLevel_index[i]:_CommandBufferLevel_index[i+1]]
+	return _CommandBufferLevel_name[_CommandBufferLevel_index[idx]:_CommandBufferLevel_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.
@@ -1021,11 +1045,11 @@ const _CommandBufferResetFlagBits_name = "COMMAND_BUFFER_RESET_RELEASE_RESOURCES
 var _CommandBufferResetFlagBits_index = [...]uint8{0, 42}
 
 func (i CommandBufferResetFlagBits) String() string {
-	i -= 1
-	if i >= CommandBufferResetFlagBits(len(_CommandBufferResetFlagBits_index)-1) {
-		return "CommandBufferResetFlagBits(" + strconv.FormatInt(int64(i+1), 10) + ")"
+	idx := int(i) - 1
+	if i < 1 || idx >= len(_CommandBufferResetFlagBits_index)-1 {
+		return "CommandBufferResetFlagBits(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _CommandBufferResetFlagBits_name[_CommandBufferResetFlagBits_index[i]:_CommandBufferResetFlagBits_index[i+1]]
+	return _CommandBufferResetFlagBits_name[_CommandBufferResetFlagBits_index[idx]:_CommandBufferResetFlagBits_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.

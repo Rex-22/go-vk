@@ -16,11 +16,11 @@ const _CommandPoolResetFlagBits_name = "COMMAND_POOL_RESET_RELEASE_RESOURCES_BIT
 var _CommandPoolResetFlagBits_index = [...]uint8{0, 40}
 
 func (i CommandPoolResetFlagBits) String() string {
-	i -= 1
-	if i >= CommandPoolResetFlagBits(len(_CommandPoolResetFlagBits_index)-1) {
-		return "CommandPoolResetFlagBits(" + strconv.FormatInt(int64(i+1), 10) + ")"
+	idx := int(i) - 1
+	if i < 1 || idx >= len(_CommandPoolResetFlagBits_index)-1 {
+		return "CommandPoolResetFlagBits(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _CommandPoolResetFlagBits_name[_CommandPoolResetFlagBits_index[i]:_CommandPoolResetFlagBits_index[i+1]]
+	return _CommandPoolResetFlagBits_name[_CommandPoolResetFlagBits_index[idx]:_CommandPoolResetFlagBits_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.
@@ -41,10 +41,11 @@ const _CompareOp_name = "COMPARE_OP_NEVERCOMPARE_OP_LESSCOMPARE_OP_EQUALCOMPARE_
 var _CompareOp_index = [...]uint8{0, 16, 31, 47, 71, 89, 109, 136, 153}
 
 func (i CompareOp) String() string {
-	if i < 0 || i >= CompareOp(len(_CompareOp_index)-1) {
+	idx := int(i) - 0
+	if i < 0 || idx >= len(_CompareOp_index)-1 {
 		return "CompareOp(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _CompareOp_name[_CompareOp_index[i]:_CompareOp_index[i+1]]
+	return _CompareOp_name[_CompareOp_index[idx]:_CompareOp_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.
@@ -64,10 +65,11 @@ const _ComponentSwizzle_name = "COMPONENT_SWIZZLE_IDENTITYCOMPONENT_SWIZZLE_ZERO
 var _ComponentSwizzle_index = [...]uint8{0, 26, 48, 69, 88, 107, 126, 145}
 
 func (i ComponentSwizzle) String() string {
-	if i < 0 || i >= ComponentSwizzle(len(_ComponentSwizzle_index)-1) {
+	idx := int(i) - 0
+	if i < 0 || idx >= len(_ComponentSwizzle_index)-1 {
 		return "ComponentSwizzle(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _ComponentSwizzle_name[_ComponentSwizzle_index[i]:_ComponentSwizzle_index[i+1]]
+	return _ComponentSwizzle_name[_ComponentSwizzle_index[idx]:_ComponentSwizzle_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.
@@ -102,10 +104,11 @@ const _ComponentTypeKHR_name = "COMPONENT_TYPE_FLOAT16_KHRCOMPONENT_TYPE_FLOAT32
 var _ComponentTypeKHR_index = [...]uint16{0, 26, 52, 78, 102, 127, 152, 177, 201, 226, 251, 276}
 
 func (i ComponentTypeKHR) String() string {
-	if i < 0 || i >= ComponentTypeKHR(len(_ComponentTypeKHR_index)-1) {
+	idx := int(i) - 0
+	if i < 0 || idx >= len(_ComponentTypeKHR_index)-1 {
 		return "ComponentTypeKHR(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _ComponentTypeKHR_name[_ComponentTypeKHR_index[i]:_ComponentTypeKHR_index[i+1]]
+	return _ComponentTypeKHR_name[_ComponentTypeKHR_index[idx]:_ComponentTypeKHR_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.
@@ -152,11 +155,11 @@ const _ConditionalRenderingFlagBitsEXT_name = "CONDITIONAL_RENDERING_INVERTED_BI
 var _ConditionalRenderingFlagBitsEXT_index = [...]uint8{0, 38}
 
 func (i ConditionalRenderingFlagBitsEXT) String() string {
-	i -= 1
-	if i >= ConditionalRenderingFlagBitsEXT(len(_ConditionalRenderingFlagBitsEXT_index)-1) {
-		return "ConditionalRenderingFlagBitsEXT(" + strconv.FormatInt(int64(i+1), 10) + ")"
+	idx := int(i) - 1
+	if i < 1 || idx >= len(_ConditionalRenderingFlagBitsEXT_index)-1 {
+		return "ConditionalRenderingFlagBitsEXT(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _ConditionalRenderingFlagBitsEXT_name[_ConditionalRenderingFlagBitsEXT_index[i]:_ConditionalRenderingFlagBitsEXT_index[i+1]]
+	return _ConditionalRenderingFlagBitsEXT_name[_ConditionalRenderingFlagBitsEXT_index[idx]:_ConditionalRenderingFlagBitsEXT_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.
@@ -172,10 +175,11 @@ const _ConservativeRasterizationModeEXT_name = "CONSERVATIVE_RASTERIZATION_MODE_
 var _ConservativeRasterizationModeEXT_index = [...]uint8{0, 44, 92, 141}
 
 func (i ConservativeRasterizationModeEXT) String() string {
-	if i < 0 || i >= ConservativeRasterizationModeEXT(len(_ConservativeRasterizationModeEXT_index)-1) {
+	idx := int(i) - 0
+	if i < 0 || idx >= len(_ConservativeRasterizationModeEXT_index)-1 {
 		return "ConservativeRasterizationModeEXT(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _ConservativeRasterizationModeEXT_name[_ConservativeRasterizationModeEXT_index[i]:_ConservativeRasterizationModeEXT_index[i+1]]
+	return _ConservativeRasterizationModeEXT_name[_ConservativeRasterizationModeEXT_index[idx]:_ConservativeRasterizationModeEXT_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.
@@ -194,10 +198,11 @@ const _CopyAccelerationStructureModeKHR_name = "COPY_ACCELERATION_STRUCTURE_MODE
 var _CopyAccelerationStructureModeKHR_index = [...]uint8{0, 42, 86, 132, 180}
 
 func (i CopyAccelerationStructureModeKHR) String() string {
-	if i < 0 || i >= CopyAccelerationStructureModeKHR(len(_CopyAccelerationStructureModeKHR_index)-1) {
+	idx := int(i) - 0
+	if i < 0 || idx >= len(_CopyAccelerationStructureModeKHR_index)-1 {
 		return "CopyAccelerationStructureModeKHR(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _CopyAccelerationStructureModeKHR_name[_CopyAccelerationStructureModeKHR_index[i]:_CopyAccelerationStructureModeKHR_index[i+1]]
+	return _CopyAccelerationStructureModeKHR_name[_CopyAccelerationStructureModeKHR_index[idx]:_CopyAccelerationStructureModeKHR_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.
@@ -214,10 +219,11 @@ const _CopyMicromapModeEXT_name = "COPY_MICROMAP_MODE_CLONE_EXTCOPY_MICROMAP_MOD
 var _CopyMicromapModeEXT_index = [...]uint8{0, 28, 60, 94, 124}
 
 func (i CopyMicromapModeEXT) String() string {
-	if i < 0 || i >= CopyMicromapModeEXT(len(_CopyMicromapModeEXT_index)-1) {
+	idx := int(i) - 0
+	if i < 0 || idx >= len(_CopyMicromapModeEXT_index)-1 {
 		return "CopyMicromapModeEXT(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _CopyMicromapModeEXT_name[_CopyMicromapModeEXT_index[i]:_CopyMicromapModeEXT_index[i+1]]
+	return _CopyMicromapModeEXT_name[_CopyMicromapModeEXT_index[idx]:_CopyMicromapModeEXT_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.
@@ -234,10 +240,11 @@ const _CoverageModulationModeNV_name = "COVERAGE_MODULATION_MODE_NONE_NVCOVERAGE
 var _CoverageModulationModeNV_index = [...]uint8{0, 32, 63, 96, 128}
 
 func (i CoverageModulationModeNV) String() string {
-	if i < 0 || i >= CoverageModulationModeNV(len(_CoverageModulationModeNV_index)-1) {
+	idx := int(i) - 0
+	if i < 0 || idx >= len(_CoverageModulationModeNV_index)-1 {
 		return "CoverageModulationModeNV(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _CoverageModulationModeNV_name[_CoverageModulationModeNV_index[i]:_CoverageModulationModeNV_index[i+1]]
+	return _CoverageModulationModeNV_name[_CoverageModulationModeNV_index[idx]:_CoverageModulationModeNV_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.
@@ -252,10 +259,11 @@ const _CoverageReductionModeNV_name = "COVERAGE_REDUCTION_MODE_MERGE_NVCOVERAGE_
 var _CoverageReductionModeNV_index = [...]uint8{0, 32, 67}
 
 func (i CoverageReductionModeNV) String() string {
-	if i < 0 || i >= CoverageReductionModeNV(len(_CoverageReductionModeNV_index)-1) {
+	idx := int(i) - 0
+	if i < 0 || idx >= len(_CoverageReductionModeNV_index)-1 {
 		return "CoverageReductionModeNV(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _CoverageReductionModeNV_name[_CoverageReductionModeNV_index[i]:_CoverageReductionModeNV_index[i+1]]
+	return _CoverageReductionModeNV_name[_CoverageReductionModeNV_index[idx]:_CoverageReductionModeNV_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.
@@ -272,10 +280,11 @@ const _CubicFilterWeightsQCOM_name = "CUBIC_FILTER_WEIGHTS_CATMULL_ROM_QCOMCUBIC
 var _CubicFilterWeightsQCOM_index = [...]uint8{0, 37, 84, 118, 162}
 
 func (i CubicFilterWeightsQCOM) String() string {
-	if i < 0 || i >= CubicFilterWeightsQCOM(len(_CubicFilterWeightsQCOM_index)-1) {
+	idx := int(i) - 0
+	if i < 0 || idx >= len(_CubicFilterWeightsQCOM_index)-1 {
 		return "CubicFilterWeightsQCOM(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _CubicFilterWeightsQCOM_name[_CubicFilterWeightsQCOM_index[i]:_CubicFilterWeightsQCOM_index[i+1]]
+	return _CubicFilterWeightsQCOM_name[_CubicFilterWeightsQCOM_index[idx]:_CubicFilterWeightsQCOM_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.
@@ -292,10 +301,11 @@ const _CullModeFlagBits_name = "CULL_MODE_NONECULL_MODE_FRONT_BITCULL_MODE_BACK_
 var _CullModeFlagBits_index = [...]uint8{0, 14, 33, 51, 75}
 
 func (i CullModeFlagBits) String() string {
-	if i >= CullModeFlagBits(len(_CullModeFlagBits_index)-1) {
+	idx := int(i) - 0
+	if i < 0 || idx >= len(_CullModeFlagBits_index)-1 {
 		return "CullModeFlagBits(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _CullModeFlagBits_name[_CullModeFlagBits_index[i]:_CullModeFlagBits_index[i+1]]
+	return _CullModeFlagBits_name[_CullModeFlagBits_index[idx]:_CullModeFlagBits_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.
@@ -376,8 +386,8 @@ func _() {
 	_ = x[DEBUG_REPORT_OBJECT_TYPE_ACCELERATION_STRUCTURE_KHR_EXT-1000150000]
 	_ = x[DEBUG_REPORT_OBJECT_TYPE_SAMPLER_YCBCR_CONVERSION_EXT-1000156000]
 	_ = x[DEBUG_REPORT_OBJECT_TYPE_ACCELERATION_STRUCTURE_NV_EXT-1000165000]
-	_ = x[DEBUG_REPORT_OBJECT_TYPE_CUDA_MODULE_NV-1000307000]
-	_ = x[DEBUG_REPORT_OBJECT_TYPE_CUDA_FUNCTION_NV-1000307001]
+	_ = x[DEBUG_REPORT_OBJECT_TYPE_CUDA_MODULE_NV_EXT-1000307000]
+	_ = x[DEBUG_REPORT_OBJECT_TYPE_CUDA_FUNCTION_NV_EXT-1000307001]
 	_ = x[DEBUG_REPORT_OBJECT_TYPE_DEBUG_REPORT_EXT-28]
 	_ = x[DEBUG_REPORT_OBJECT_TYPE_DESCRIPTOR_UPDATE_TEMPLATE_KHR_EXT-1000011000]
 	_ = x[DEBUG_REPORT_OBJECT_TYPE_SAMPLER_YCBCR_CONVERSION_KHR_EXT-1000156000]
@@ -392,13 +402,13 @@ const (
 	_DebugReportObjectTypeEXT_name_4 = "DEBUG_REPORT_OBJECT_TYPE_ACCELERATION_STRUCTURE_KHR_EXT"
 	_DebugReportObjectTypeEXT_name_5 = "DEBUG_REPORT_OBJECT_TYPE_SAMPLER_YCBCR_CONVERSION_EXT"
 	_DebugReportObjectTypeEXT_name_6 = "DEBUG_REPORT_OBJECT_TYPE_ACCELERATION_STRUCTURE_NV_EXT"
-	_DebugReportObjectTypeEXT_name_7 = "DEBUG_REPORT_OBJECT_TYPE_CUDA_MODULE_NVDEBUG_REPORT_OBJECT_TYPE_CUDA_FUNCTION_NV"
+	_DebugReportObjectTypeEXT_name_7 = "DEBUG_REPORT_OBJECT_TYPE_CUDA_MODULE_NV_EXTDEBUG_REPORT_OBJECT_TYPE_CUDA_FUNCTION_NV_EXT"
 )
 
 var (
 	_DebugReportObjectTypeEXT_index_0 = [...]uint16{0, 36, 73, 117, 152, 186, 224, 267, 301, 343, 378, 412, 446, 485, 525, 564, 606, 649, 693, 733, 770, 820, 856, 900, 943, 983, 1024, 1064, 1106, 1160, 1200, 1245}
 	_DebugReportObjectTypeEXT_index_3 = [...]uint8{0, 42, 86}
-	_DebugReportObjectTypeEXT_index_7 = [...]uint8{0, 39, 80}
+	_DebugReportObjectTypeEXT_index_7 = [...]uint8{0, 43, 88}
 )
 
 func (i DebugReportObjectTypeEXT) String() string {
@@ -538,10 +548,11 @@ const _DepthBiasRepresentationEXT_name = "DEPTH_BIAS_REPRESENTATION_LEAST_REPRES
 var _DepthBiasRepresentationEXT_index = [...]uint8{0, 62, 129, 164}
 
 func (i DepthBiasRepresentationEXT) String() string {
-	if i < 0 || i >= DepthBiasRepresentationEXT(len(_DepthBiasRepresentationEXT_index)-1) {
+	idx := int(i) - 0
+	if i < 0 || idx >= len(_DepthBiasRepresentationEXT_index)-1 {
 		return "DepthBiasRepresentationEXT(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _DepthBiasRepresentationEXT_name[_DepthBiasRepresentationEXT_index[i]:_DepthBiasRepresentationEXT_index[i+1]]
+	return _DepthBiasRepresentationEXT_name[_DepthBiasRepresentationEXT_index[idx]:_DepthBiasRepresentationEXT_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.
@@ -587,8 +598,8 @@ func _() {
 	_ = x[DESCRIPTOR_POOL_CREATE_FREE_DESCRIPTOR_SET_BIT-1]
 	_ = x[DESCRIPTOR_POOL_CREATE_UPDATE_AFTER_BIND_BIT-2]
 	_ = x[DESCRIPTOR_POOL_CREATE_HOST_ONLY_BIT_EXT-1000494000]
-	_ = x[DESCRIPTOR_POOL_CREATE_ALLOW_OVERALLOCATION_POOLS_BIT_NV-1000546000]
 	_ = x[DESCRIPTOR_POOL_CREATE_ALLOW_OVERALLOCATION_SETS_BIT_NV-1000546000]
+	_ = x[DESCRIPTOR_POOL_CREATE_ALLOW_OVERALLOCATION_POOLS_BIT_NV-1000546000]
 	_ = x[DESCRIPTOR_POOL_CREATE_HOST_ONLY_BIT_VALVE-1000494000]
 	_ = x[DESCRIPTOR_POOL_CREATE_UPDATE_AFTER_BIND_BIT_EXT-2]
 }
@@ -596,7 +607,7 @@ func _() {
 const (
 	_DescriptorPoolCreateFlagBits_name_0 = "DESCRIPTOR_POOL_CREATE_FREE_DESCRIPTOR_SET_BITDESCRIPTOR_POOL_CREATE_UPDATE_AFTER_BIND_BIT"
 	_DescriptorPoolCreateFlagBits_name_1 = "DESCRIPTOR_POOL_CREATE_HOST_ONLY_BIT_EXT"
-	_DescriptorPoolCreateFlagBits_name_2 = "DESCRIPTOR_POOL_CREATE_ALLOW_OVERALLOCATION_POOLS_BIT_NV"
+	_DescriptorPoolCreateFlagBits_name_2 = "DESCRIPTOR_POOL_CREATE_ALLOW_OVERALLOCATION_SETS_BIT_NV"
 )
 
 var (
@@ -626,6 +637,7 @@ func _() {
 	_ = x[DESCRIPTOR_SET_LAYOUT_CREATE_DESCRIPTOR_BUFFER_BIT_EXT-1000316000]
 	_ = x[DESCRIPTOR_SET_LAYOUT_CREATE_INDIRECT_BINDABLE_BIT_NV-1000428000]
 	_ = x[DESCRIPTOR_SET_LAYOUT_CREATE_HOST_ONLY_POOL_BIT_EXT-1000494000]
+	_ = x[DESCRIPTOR_SET_LAYOUT_CREATE_PER_STAGE_BIT_NV-1000516000]
 	_ = x[DESCRIPTOR_SET_LAYOUT_CREATE_HOST_ONLY_POOL_BIT_VALVE-1000494000]
 	_ = x[DESCRIPTOR_SET_LAYOUT_CREATE_UPDATE_AFTER_BIND_POOL_BIT_EXT-2]
 }
@@ -636,6 +648,7 @@ const (
 	_DescriptorSetLayoutCreateFlagBits_name_2 = "DESCRIPTOR_SET_LAYOUT_CREATE_EMBEDDED_IMMUTABLE_SAMPLERS_BIT_EXT"
 	_DescriptorSetLayoutCreateFlagBits_name_3 = "DESCRIPTOR_SET_LAYOUT_CREATE_INDIRECT_BINDABLE_BIT_NV"
 	_DescriptorSetLayoutCreateFlagBits_name_4 = "DESCRIPTOR_SET_LAYOUT_CREATE_HOST_ONLY_POOL_BIT_EXT"
+	_DescriptorSetLayoutCreateFlagBits_name_5 = "DESCRIPTOR_SET_LAYOUT_CREATE_PER_STAGE_BIT_NV"
 )
 
 func (i DescriptorSetLayoutCreateFlagBits) String() string {
@@ -650,6 +663,8 @@ func (i DescriptorSetLayoutCreateFlagBits) String() string {
 		return _DescriptorSetLayoutCreateFlagBits_name_3
 	case i == 1000494000:
 		return _DescriptorSetLayoutCreateFlagBits_name_4
+	case i == 1000516000:
+		return _DescriptorSetLayoutCreateFlagBits_name_5
 	default:
 		return "DescriptorSetLayoutCreateFlagBits(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
@@ -748,11 +763,11 @@ const _DeviceAddressBindingFlagBitsEXT_name = "DEVICE_ADDRESS_BINDING_INTERNAL_O
 var _DeviceAddressBindingFlagBitsEXT_index = [...]uint8{0, 46}
 
 func (i DeviceAddressBindingFlagBitsEXT) String() string {
-	i -= 1
-	if i >= DeviceAddressBindingFlagBitsEXT(len(_DeviceAddressBindingFlagBitsEXT_index)-1) {
-		return "DeviceAddressBindingFlagBitsEXT(" + strconv.FormatInt(int64(i+1), 10) + ")"
+	idx := int(i) - 1
+	if i < 1 || idx >= len(_DeviceAddressBindingFlagBitsEXT_index)-1 {
+		return "DeviceAddressBindingFlagBitsEXT(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _DeviceAddressBindingFlagBitsEXT_name[_DeviceAddressBindingFlagBitsEXT_index[i]:_DeviceAddressBindingFlagBitsEXT_index[i+1]]
+	return _DeviceAddressBindingFlagBitsEXT_name[_DeviceAddressBindingFlagBitsEXT_index[idx]:_DeviceAddressBindingFlagBitsEXT_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.
@@ -767,10 +782,11 @@ const _DeviceAddressBindingTypeEXT_name = "DEVICE_ADDRESS_BINDING_TYPE_BIND_EXTD
 var _DeviceAddressBindingTypeEXT_index = [...]uint8{0, 36, 74}
 
 func (i DeviceAddressBindingTypeEXT) String() string {
-	if i < 0 || i >= DeviceAddressBindingTypeEXT(len(_DeviceAddressBindingTypeEXT_index)-1) {
+	idx := int(i) - 0
+	if i < 0 || idx >= len(_DeviceAddressBindingTypeEXT_index)-1 {
 		return "DeviceAddressBindingTypeEXT(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _DeviceAddressBindingTypeEXT_name[_DeviceAddressBindingTypeEXT_index[i]:_DeviceAddressBindingTypeEXT_index[i+1]]
+	return _DeviceAddressBindingTypeEXT_name[_DeviceAddressBindingTypeEXT_index[idx]:_DeviceAddressBindingTypeEXT_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.
@@ -817,10 +833,11 @@ const _DeviceEventTypeEXT_name = "DEVICE_EVENT_TYPE_DISPLAY_HOTPLUG_EXT"
 var _DeviceEventTypeEXT_index = [...]uint8{0, 37}
 
 func (i DeviceEventTypeEXT) String() string {
-	if i < 0 || i >= DeviceEventTypeEXT(len(_DeviceEventTypeEXT_index)-1) {
+	idx := int(i) - 0
+	if i < 0 || idx >= len(_DeviceEventTypeEXT_index)-1 {
 		return "DeviceEventTypeEXT(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _DeviceEventTypeEXT_name[_DeviceEventTypeEXT_index[i]:_DeviceEventTypeEXT_index[i+1]]
+	return _DeviceEventTypeEXT_name[_DeviceEventTypeEXT_index[idx]:_DeviceEventTypeEXT_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.
@@ -840,10 +857,11 @@ const _DeviceFaultAddressTypeEXT_name = "DEVICE_FAULT_ADDRESS_TYPE_NONE_EXTDEVIC
 var _DeviceFaultAddressTypeEXT_index = [...]uint16{0, 34, 76, 119, 164, 221, 278, 333}
 
 func (i DeviceFaultAddressTypeEXT) String() string {
-	if i < 0 || i >= DeviceFaultAddressTypeEXT(len(_DeviceFaultAddressTypeEXT_index)-1) {
+	idx := int(i) - 0
+	if i < 0 || idx >= len(_DeviceFaultAddressTypeEXT_index)-1 {
 		return "DeviceFaultAddressTypeEXT(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _DeviceFaultAddressTypeEXT_name[_DeviceFaultAddressTypeEXT_index[i]:_DeviceFaultAddressTypeEXT_index[i+1]]
+	return _DeviceFaultAddressTypeEXT_name[_DeviceFaultAddressTypeEXT_index[idx]:_DeviceFaultAddressTypeEXT_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.
@@ -857,11 +875,11 @@ const _DeviceFaultVendorBinaryHeaderVersionEXT_name = "DEVICE_FAULT_VENDOR_BINAR
 var _DeviceFaultVendorBinaryHeaderVersionEXT_index = [...]uint8{0, 49}
 
 func (i DeviceFaultVendorBinaryHeaderVersionEXT) String() string {
-	i -= 1
-	if i < 0 || i >= DeviceFaultVendorBinaryHeaderVersionEXT(len(_DeviceFaultVendorBinaryHeaderVersionEXT_index)-1) {
-		return "DeviceFaultVendorBinaryHeaderVersionEXT(" + strconv.FormatInt(int64(i+1), 10) + ")"
+	idx := int(i) - 1
+	if i < 1 || idx >= len(_DeviceFaultVendorBinaryHeaderVersionEXT_index)-1 {
+		return "DeviceFaultVendorBinaryHeaderVersionEXT(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _DeviceFaultVendorBinaryHeaderVersionEXT_name[_DeviceFaultVendorBinaryHeaderVersionEXT_index[i]:_DeviceFaultVendorBinaryHeaderVersionEXT_index[i+1]]
+	return _DeviceFaultVendorBinaryHeaderVersionEXT_name[_DeviceFaultVendorBinaryHeaderVersionEXT_index[idx]:_DeviceFaultVendorBinaryHeaderVersionEXT_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.
