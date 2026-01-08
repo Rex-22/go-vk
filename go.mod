@@ -1,4 +1,4 @@
-module github.com/bbredesen/go-vk
+module github.com/Rex-22/go-vk
 
 go 1.24.0
 
